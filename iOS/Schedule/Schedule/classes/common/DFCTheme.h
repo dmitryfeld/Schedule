@@ -14,5 +14,9 @@
 @property (strong,readonly,nonatomic) UIColor *currentTimeCellLabelColor;
 @property (strong,readonly,nonatomic) UIFont *currentTimeCellLabelFont;
 @property (strong,readonly,nonatomic) UIFont *notCurrentTimeCellLabelFont;
+
+@property (strong,readonly,nonatomic) UIColor* completedMeetingTintColor;
+@property (strong,readonly,nonatomic) UIColor* startedMeetingTintColor;
+@property (strong,readonly,nonatomic) UIColor* nextMeetingTintColor;
 + (DFCTheme*)sharedTheme;
 @end

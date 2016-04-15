@@ -12,7 +12,6 @@
 typedef enum __DFCComplicationSupportMeetingStates__:NSUInteger {
     kDFCComplicationSupportMeetingStateStarted,
     kDFCComplicationSupportMeetingStateCompleted,
-    kDFCComplicationSupportMeetingStatePast,
     kDFCComplicationSupportMeetingStateNext
     
 } DFCComplicationSupportMeetingStates;

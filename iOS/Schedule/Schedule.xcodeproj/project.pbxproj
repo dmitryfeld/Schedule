@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		006F096C1CC0B85D00A8E5C7 /* meeting.png in Resources */ = {isa = PBXBuildFile; fileRef = 006F096A1CC0B85D00A8E5C7 /* meeting.png */; };
+		006F096D1CC0B85D00A8E5C7 /* meeting.png in Resources */ = {isa = PBXBuildFile; fileRef = 006F096A1CC0B85D00A8E5C7 /* meeting.png */; };
+		006F096E1CC0B85D00A8E5C7 /* meeting.png in Resources */ = {isa = PBXBuildFile; fileRef = 006F096A1CC0B85D00A8E5C7 /* meeting.png */; };
+		006F096F1CC0B85D00A8E5C7 /* meeting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 006F096B1CC0B85D00A8E5C7 /* meeting@2x.png */; };
+		006F09701CC0B85D00A8E5C7 /* meeting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 006F096B1CC0B85D00A8E5C7 /* meeting@2x.png */; };
+		006F09711CC0B85D00A8E5C7 /* meeting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 006F096B1CC0B85D00A8E5C7 /* meeting@2x.png */; };
 		0079B9281CBC369B00F925C5 /* DFCComplicationData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0079B9271CBC369B00F925C5 /* DFCComplicationData.m */; };
 		0079B92E1CBC3C5300F925C5 /* DFCComplicationSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 0079B92D1CBC3C5300F925C5 /* DFCComplicationSupport.m */; };
 		0090A3701CB9F04C00D1F68C /* DFCModulalLargeComplicationSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 0090A36F1CB9F04C00D1F68C /* DFCModulalLargeComplicationSupport.m */; };
@@ -91,6 +97,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		006F096A1CC0B85D00A8E5C7 /* meeting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meeting.png; sourceTree = "<group>"; };
+		006F096B1CC0B85D00A8E5C7 /* meeting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "meeting@2x.png"; sourceTree = "<group>"; };
 		0079B9261CBC369B00F925C5 /* DFCComplicationData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFCComplicationData.h; sourceTree = "<group>"; };
 		0079B9271CBC369B00F925C5 /* DFCComplicationData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFCComplicationData.m; sourceTree = "<group>"; };
 		0079B92C1CBC3C5300F925C5 /* DFCComplicationSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFCComplicationSupport.h; sourceTree = "<group>"; };
@@ -170,6 +178,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		006F09691CC0B84D00A8E5C7 /* Artwork */ = {
+			isa = PBXGroup;
+			children = (
+				006F096A1CC0B85D00A8E5C7 /* meeting.png */,
+				006F096B1CC0B85D00A8E5C7 /* meeting@2x.png */,
+			);
+			path = Artwork;
+			sourceTree = "<group>";
+		};
 		0090A36D1CB9F04C00D1F68C /* support */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +230,7 @@
 		00EC0B0D1CB99CAC007990ED /* Schedule */ = {
 			isa = PBXGroup;
 			children = (
+				006F09691CC0B84D00A8E5C7 /* Artwork */,
 				00EC0B251CB99D68007990ED /* classes */,
 				00EC0B2F1CB99D68007990ED /* i18n */,
 				00EC0B171CB99CAC007990ED /* Main.storyboard */,
@@ -491,10 +509,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				00EC0B391CB99D68007990ED /* Localizable.strings in Resources */,
+				006F096C1CC0B85D00A8E5C7 /* meeting.png in Resources */,
 				00EC0B1E1CB99CAC007990ED /* LaunchScreen.storyboard in Resources */,
 				00EC0B381CB99D68007990ED /* InfoPlist.strings in Resources */,
 				00EC0B1B1CB99CAC007990ED /* Assets.xcassets in Resources */,
 				00EC0B191CB99CAC007990ED /* Main.storyboard in Resources */,
+				006F096F1CC0B85D00A8E5C7 /* meeting@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,7 +522,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				006F09701CC0B85D00A8E5C7 /* meeting@2x.png in Resources */,
 				00EC0B421CB99DD2007990ED /* Assets.xcassets in Resources */,
+				006F096D1CC0B85D00A8E5C7 /* meeting.png in Resources */,
 				00EC0B401CB99DD2007990ED /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,6 +534,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				00EC0B5F1CB99DD3007990ED /* Assets.xcassets in Resources */,
+				006F096E1CC0B85D00A8E5C7 /* meeting.png in Resources */,
+				006F09711CC0B85D00A8E5C7 /* meeting@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

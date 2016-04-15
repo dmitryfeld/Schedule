@@ -11,6 +11,8 @@
 #import "NSDate+Notifier.h"
 #import "DFCComplicationData.h"
 
+#import "DFCTheme.h"
+
 @interface DFCModulalLargeComplicationSupport() {
 @private
     CLKComplicationTemplateModularLargeStandardBody* _defaultTemplate;
@@ -23,6 +25,8 @@
     _defaultTemplate = nil;
     if (!_defaultTemplate) {
         CLKComplicationTemplateModularLargeStandardBody* result = [CLKComplicationTemplateModularLargeStandardBody new];
+        result.headerImageProvider = [CLKImageProvider imageProviderWithOnePieceImage:[UIImage imageNamed:@"meeting"]];
+        result.headerImageProvider.tintColor = [UIColor whiteColor];
         result.headerTextProvider = [CLKSimpleTextProvider textProviderWithText:@"Meeting"];
         
         result.body1TextProvider = [CLKSimpleTextProvider textProviderWithText:@""];
@@ -41,7 +45,10 @@
         dateLabel = [NSDate shortTimeFormatForDate:date];
         dateLabel = [NSString stringWithFormat:@"%@ - %@",dateLabel,[NSDate shortTimeFormatForDate:meeting.endDate]];
         NSString* displayName = meeting.displayName;
+        template.headerImageProvider = [CLKImageProvider imageProviderWithOnePieceImage:[UIImage imageNamed:@"meeting"]];
+        template.headerImageProvider.tintColor = [self tintColorForState:state];
         template.headerTextProvider = [CLKSimpleTextProvider textProviderWithText:header];
+        template.headerTextProvider.tintColor = [self tintColorForState:state];
         template.body1TextProvider = [CLKSimpleTextProvider textProviderWithText:displayName];
         template.body2TextProvider = [CLKSimpleTextProvider textProviderWithText:dateLabel];
     }
@@ -56,8 +63,20 @@
         case kDFCComplicationSupportMeetingStateCompleted:
             result = @"Completed Meeting";
             break;
-        case kDFCComplicationSupportMeetingStatePast:
-            result = @"Past Meeting";
+        case kDFCComplicationSupportMeetingStateNext:
+        default:
+            break;
+    }
+    return result;
+}
+- (UIColor*) tintColorForState:(DFCComplicationSupportMeetingStates)state {
+    UIColor* result = [DFCTheme sharedTheme].nextMeetingTintColor;
+    switch (state) {
+        case kDFCComplicationSupportMeetingStateStarted:
+            result = [DFCTheme sharedTheme].startedMeetingTintColor;
+            break;
+        case kDFCComplicationSupportMeetingStateCompleted:
+            result = [DFCTheme sharedTheme].completedMeetingTintColor;
             break;
         case kDFCComplicationSupportMeetingStateNext:
         default:
