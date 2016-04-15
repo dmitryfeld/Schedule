@@ -1,0 +1,837 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0079B9281CBC369B00F925C5 /* DFCComplicationData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0079B9271CBC369B00F925C5 /* DFCComplicationData.m */; };
+		0079B92E1CBC3C5300F925C5 /* DFCComplicationSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 0079B92D1CBC3C5300F925C5 /* DFCComplicationSupport.m */; };
+		0090A3701CB9F04C00D1F68C /* DFCModulalLargeComplicationSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 0090A36F1CB9F04C00D1F68C /* DFCModulalLargeComplicationSupport.m */; };
+		00DA1D611CB9CF87003053A3 /* DFCTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DA1D601CB9CF87003053A3 /* DFCTheme.m */; };
+		00DA1D621CB9CF87003053A3 /* DFCTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DA1D601CB9CF87003053A3 /* DFCTheme.m */; };
+		00DA1D651CB9D18C003053A3 /* DFCApplicationData.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DA1D641CB9D18C003053A3 /* DFCApplicationData.m */; };
+		00DA1D6A1CB9D473003053A3 /* DFCMeetingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DA1D671CB9D473003053A3 /* DFCMeetingsViewController.m */; };
+		00DA1D6B1CB9D473003053A3 /* DFCMeetingViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DA1D691CB9D473003053A3 /* DFCMeetingViewCell.m */; };
+		00EC0B101CB99CAC007990ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EC0B0F1CB99CAC007990ED /* main.m */; };
+		00EC0B191CB99CAC007990ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00EC0B171CB99CAC007990ED /* Main.storyboard */; };
+		00EC0B1B1CB99CAC007990ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00EC0B1A1CB99CAC007990ED /* Assets.xcassets */; };
+		00EC0B1E1CB99CAC007990ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00EC0B1C1CB99CAC007990ED /* LaunchScreen.storyboard */; };
+		00EC0B361CB99D68007990ED /* DFCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EC0B271CB99D68007990ED /* DFCAppDelegate.m */; };
+		00EC0B381CB99D68007990ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00EC0B301CB99D68007990ED /* InfoPlist.strings */; };
+		00EC0B391CB99D68007990ED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00EC0B321CB99D68007990ED /* Localizable.strings */; };
+		00EC0B401CB99DD2007990ED /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00EC0B3E1CB99DD2007990ED /* Interface.storyboard */; };
+		00EC0B421CB99DD2007990ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00EC0B411CB99DD2007990ED /* Assets.xcassets */; };
+		00EC0B491CB99DD2007990ED /* Notifier Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 00EC0B481CB99DD2007990ED /* Notifier Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		00EC0B5F1CB99DD3007990ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00EC0B5E1CB99DD3007990ED /* Assets.xcassets */; };
+		00EC0B631CB99DD3007990ED /* Notifier.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 00EC0B3C1CB99DD2007990ED /* Notifier.app */; };
+		00EC0B7A1CB99E38007990ED /* DFCComplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EC0B6F1CB99E38007990ED /* DFCComplicationController.m */; };
+		00EC0B7B1CB99E38007990ED /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EC0B711CB99E38007990ED /* ExtensionDelegate.m */; };
+		00EC0B7C1CB99E38007990ED /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EC0B741CB99E38007990ED /* GlanceController.m */; };
+		00EC0B7D1CB99E38007990ED /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EC0B761CB99E38007990ED /* InterfaceController.m */; };
+		00EC0B7E1CB99E38007990ED /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EC0B791CB99E38007990ED /* NotificationController.m */; };
+		00EC0B811CB99E60007990ED /* DFCUIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EC0B801CB99E60007990ED /* DFCUIUtils.m */; };
+		00EC0B821CB99E60007990ED /* DFCUIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EC0B801CB99E60007990ED /* DFCUIUtils.m */; };
+		00EC0B851CB99F0C007990ED /* DFCMeeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EC0B841CB99F0C007990ED /* DFCMeeting.m */; };
+		00EC0B861CB99F0C007990ED /* DFCMeeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EC0B841CB99F0C007990ED /* DFCMeeting.m */; };
+		00EC0B891CB99F28007990ED /* DFCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EC0B881CB99F28007990ED /* DFCModel.m */; };
+		00EC0B8A1CB99F28007990ED /* DFCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EC0B881CB99F28007990ED /* DFCModel.m */; };
+		00EC0B8D1CB99FEC007990ED /* DFCLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EC0B8C1CB99FEC007990ED /* DFCLogger.m */; };
+		00EC0B8E1CB99FEC007990ED /* DFCLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EC0B8C1CB99FEC007990ED /* DFCLogger.m */; };
+		00EC0B921CB9A037007990ED /* DFCSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EC0B901CB9A037007990ED /* DFCSingleton.m */; };
+		00EC0B931CB9A037007990ED /* DFCSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EC0B901CB9A037007990ED /* DFCSingleton.m */; };
+		00EC0B961CB9A098007990ED /* NSDate+Notifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EC0B951CB9A098007990ED /* NSDate+Notifier.m */; };
+		00EC0B971CB9A098007990ED /* NSDate+Notifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EC0B951CB9A098007990ED /* NSDate+Notifier.m */; };
+		00EC0B9A1CB9A518007990ED /* DFCSchedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EC0B991CB9A518007990ED /* DFCSchedule.m */; };
+		00EC0B9B1CB9A518007990ED /* DFCSchedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EC0B991CB9A518007990ED /* DFCSchedule.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00EC0B4A1CB99DD2007990ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00EC0B031CB99CAC007990ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00EC0B471CB99DD2007990ED;
+			remoteInfo = "Notifier Extension";
+		};
+		00EC0B611CB99DD3007990ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00EC0B031CB99CAC007990ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00EC0B3B1CB99DD2007990ED;
+			remoteInfo = Notifier;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		00EC0B671CB99DD3007990ED /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				00EC0B491CB99DD2007990ED /* Notifier Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EC0B6B1CB99DD3007990ED /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				00EC0B631CB99DD3007990ED /* Notifier.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0079B9261CBC369B00F925C5 /* DFCComplicationData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFCComplicationData.h; sourceTree = "<group>"; };
+		0079B9271CBC369B00F925C5 /* DFCComplicationData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFCComplicationData.m; sourceTree = "<group>"; };
+		0079B92C1CBC3C5300F925C5 /* DFCComplicationSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFCComplicationSupport.h; sourceTree = "<group>"; };
+		0079B92D1CBC3C5300F925C5 /* DFCComplicationSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFCComplicationSupport.m; sourceTree = "<group>"; };
+		0090A36E1CB9F04C00D1F68C /* DFCModulalLargeComplicationSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFCModulalLargeComplicationSupport.h; sourceTree = "<group>"; };
+		0090A36F1CB9F04C00D1F68C /* DFCModulalLargeComplicationSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFCModulalLargeComplicationSupport.m; sourceTree = "<group>"; };
+		00DA1D5F1CB9CF87003053A3 /* DFCTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFCTheme.h; sourceTree = "<group>"; };
+		00DA1D601CB9CF87003053A3 /* DFCTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFCTheme.m; sourceTree = "<group>"; };
+		00DA1D631CB9D18C003053A3 /* DFCApplicationData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFCApplicationData.h; sourceTree = "<group>"; };
+		00DA1D641CB9D18C003053A3 /* DFCApplicationData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFCApplicationData.m; sourceTree = "<group>"; };
+		00DA1D661CB9D473003053A3 /* DFCMeetingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFCMeetingsViewController.h; sourceTree = "<group>"; };
+		00DA1D671CB9D473003053A3 /* DFCMeetingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFCMeetingsViewController.m; sourceTree = "<group>"; };
+		00DA1D681CB9D473003053A3 /* DFCMeetingViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFCMeetingViewCell.h; sourceTree = "<group>"; };
+		00DA1D691CB9D473003053A3 /* DFCMeetingViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFCMeetingViewCell.m; sourceTree = "<group>"; };
+		00EC0B0B1CB99CAC007990ED /* Schedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Schedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00EC0B0F1CB99CAC007990ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		00EC0B181CB99CAC007990ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		00EC0B1A1CB99CAC007990ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00EC0B1D1CB99CAC007990ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		00EC0B1F1CB99CAC007990ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00EC0B261CB99D68007990ED /* DFCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFCAppDelegate.h; sourceTree = "<group>"; };
+		00EC0B271CB99D68007990ED /* DFCAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFCAppDelegate.m; sourceTree = "<group>"; };
+		00EC0B311CB99D68007990ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		00EC0B331CB99D68007990ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00EC0B341CB99D68007990ED /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		00EC0B351CB99D68007990ED /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		00EC0B3C1CB99DD2007990ED /* Notifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00EC0B3F1CB99DD2007990ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		00EC0B411CB99DD2007990ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00EC0B431CB99DD2007990ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00EC0B481CB99DD2007990ED /* Notifier Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Notifier Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00EC0B4E1CB99DD2007990ED /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		00EC0B5E1CB99DD3007990ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00EC0B601CB99DD3007990ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00EC0B6E1CB99E38007990ED /* DFCComplicationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFCComplicationController.h; sourceTree = "<group>"; };
+		00EC0B6F1CB99E38007990ED /* DFCComplicationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFCComplicationController.m; sourceTree = "<group>"; };
+		00EC0B701CB99E38007990ED /* ExtensionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		00EC0B711CB99E38007990ED /* ExtensionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		00EC0B731CB99E38007990ED /* GlanceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlanceController.h; sourceTree = "<group>"; };
+		00EC0B741CB99E38007990ED /* GlanceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlanceController.m; sourceTree = "<group>"; };
+		00EC0B751CB99E38007990ED /* InterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		00EC0B761CB99E38007990ED /* InterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		00EC0B781CB99E38007990ED /* NotificationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		00EC0B791CB99E38007990ED /* NotificationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		00EC0B7F1CB99E60007990ED /* DFCUIUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = DFCUIUtils.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		00EC0B801CB99E60007990ED /* DFCUIUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DFCUIUtils.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		00EC0B831CB99F0C007990ED /* DFCMeeting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFCMeeting.h; sourceTree = "<group>"; };
+		00EC0B841CB99F0C007990ED /* DFCMeeting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFCMeeting.m; sourceTree = "<group>"; };
+		00EC0B871CB99F28007990ED /* DFCModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFCModel.h; sourceTree = "<group>"; };
+		00EC0B881CB99F28007990ED /* DFCModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFCModel.m; sourceTree = "<group>"; };
+		00EC0B8B1CB99FEC007990ED /* DFCLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFCLogger.h; sourceTree = "<group>"; };
+		00EC0B8C1CB99FEC007990ED /* DFCLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFCLogger.m; sourceTree = "<group>"; };
+		00EC0B8F1CB9A037007990ED /* DFCSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFCSingleton.h; sourceTree = "<group>"; };
+		00EC0B901CB9A037007990ED /* DFCSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFCSingleton.m; sourceTree = "<group>"; };
+		00EC0B911CB9A037007990ED /* DFCTagged.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFCTagged.h; sourceTree = "<group>"; };
+		00EC0B941CB9A098007990ED /* NSDate+Notifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Notifier.h"; sourceTree = "<group>"; };
+		00EC0B951CB9A098007990ED /* NSDate+Notifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Notifier.m"; sourceTree = "<group>"; };
+		00EC0B981CB9A518007990ED /* DFCSchedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFCSchedule.h; sourceTree = "<group>"; };
+		00EC0B991CB9A518007990ED /* DFCSchedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFCSchedule.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00EC0B081CB99CAC007990ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EC0B451CB99DD2007990ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0090A36D1CB9F04C00D1F68C /* support */ = {
+			isa = PBXGroup;
+			children = (
+				0079B92C1CBC3C5300F925C5 /* DFCComplicationSupport.h */,
+				0079B92D1CBC3C5300F925C5 /* DFCComplicationSupport.m */,
+				0090A36E1CB9F04C00D1F68C /* DFCModulalLargeComplicationSupport.h */,
+				0090A36F1CB9F04C00D1F68C /* DFCModulalLargeComplicationSupport.m */,
+			);
+			path = support;
+			sourceTree = "<group>";
+		};
+		00DA1D5E1CB9CD5D003053A3 /* application */ = {
+			isa = PBXGroup;
+			children = (
+				00DA1D631CB9D18C003053A3 /* DFCApplicationData.h */,
+				00DA1D641CB9D18C003053A3 /* DFCApplicationData.m */,
+			);
+			path = application;
+			sourceTree = "<group>";
+		};
+		00EC0B021CB99CAC007990ED = {
+			isa = PBXGroup;
+			children = (
+				00EC0B0D1CB99CAC007990ED /* Schedule */,
+				00EC0B3D1CB99DD2007990ED /* Notifier */,
+				00EC0B4C1CB99DD2007990ED /* Notifier Extension */,
+				00EC0B0C1CB99CAC007990ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		00EC0B0C1CB99CAC007990ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00EC0B0B1CB99CAC007990ED /* Schedule.app */,
+				00EC0B3C1CB99DD2007990ED /* Notifier.app */,
+				00EC0B481CB99DD2007990ED /* Notifier Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00EC0B0D1CB99CAC007990ED /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				00EC0B251CB99D68007990ED /* classes */,
+				00EC0B2F1CB99D68007990ED /* i18n */,
+				00EC0B171CB99CAC007990ED /* Main.storyboard */,
+				00EC0B1A1CB99CAC007990ED /* Assets.xcassets */,
+				00EC0B1C1CB99CAC007990ED /* LaunchScreen.storyboard */,
+				00EC0B1F1CB99CAC007990ED /* Info.plist */,
+				00EC0B0E1CB99CAC007990ED /* Supporting Files */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		00EC0B0E1CB99CAC007990ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00EC0B0F1CB99CAC007990ED /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		00EC0B251CB99D68007990ED /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				00DA1D5E1CB9CD5D003053A3 /* application */,
+				00EC0B281CB99D68007990ED /* common */,
+				00EC0B291CB99D68007990ED /* model */,
+				00EC0B2A1CB99D68007990ED /* ui */,
+				00EC0B261CB99D68007990ED /* DFCAppDelegate.h */,
+				00EC0B271CB99D68007990ED /* DFCAppDelegate.m */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		00EC0B281CB99D68007990ED /* common */ = {
+			isa = PBXGroup;
+			children = (
+				00DA1D5F1CB9CF87003053A3 /* DFCTheme.h */,
+				00DA1D601CB9CF87003053A3 /* DFCTheme.m */,
+				00EC0B941CB9A098007990ED /* NSDate+Notifier.h */,
+				00EC0B951CB9A098007990ED /* NSDate+Notifier.m */,
+				00EC0B8F1CB9A037007990ED /* DFCSingleton.h */,
+				00EC0B901CB9A037007990ED /* DFCSingleton.m */,
+				00EC0B911CB9A037007990ED /* DFCTagged.h */,
+				00EC0B8B1CB99FEC007990ED /* DFCLogger.h */,
+				00EC0B8C1CB99FEC007990ED /* DFCLogger.m */,
+				00EC0B7F1CB99E60007990ED /* DFCUIUtils.h */,
+				00EC0B801CB99E60007990ED /* DFCUIUtils.m */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		00EC0B291CB99D68007990ED /* model */ = {
+			isa = PBXGroup;
+			children = (
+				00EC0B831CB99F0C007990ED /* DFCMeeting.h */,
+				00EC0B841CB99F0C007990ED /* DFCMeeting.m */,
+				00EC0B871CB99F28007990ED /* DFCModel.h */,
+				00EC0B881CB99F28007990ED /* DFCModel.m */,
+				00EC0B981CB9A518007990ED /* DFCSchedule.h */,
+				00EC0B991CB9A518007990ED /* DFCSchedule.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		00EC0B2A1CB99D68007990ED /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				00EC0B2B1CB99D68007990ED /* common */,
+				00EC0B2C1CB99D68007990ED /* schedule */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		00EC0B2B1CB99D68007990ED /* common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		00EC0B2C1CB99D68007990ED /* schedule */ = {
+			isa = PBXGroup;
+			children = (
+				00DA1D661CB9D473003053A3 /* DFCMeetingsViewController.h */,
+				00DA1D671CB9D473003053A3 /* DFCMeetingsViewController.m */,
+				00DA1D681CB9D473003053A3 /* DFCMeetingViewCell.h */,
+				00DA1D691CB9D473003053A3 /* DFCMeetingViewCell.m */,
+			);
+			path = schedule;
+			sourceTree = "<group>";
+		};
+		00EC0B2F1CB99D68007990ED /* i18n */ = {
+			isa = PBXGroup;
+			children = (
+				00EC0B301CB99D68007990ED /* InfoPlist.strings */,
+				00EC0B321CB99D68007990ED /* Localizable.strings */,
+			);
+			path = i18n;
+			sourceTree = "<group>";
+		};
+		00EC0B3D1CB99DD2007990ED /* Notifier */ = {
+			isa = PBXGroup;
+			children = (
+				00EC0B3E1CB99DD2007990ED /* Interface.storyboard */,
+				00EC0B411CB99DD2007990ED /* Assets.xcassets */,
+				00EC0B431CB99DD2007990ED /* Info.plist */,
+			);
+			path = Notifier;
+			sourceTree = "<group>";
+		};
+		00EC0B4C1CB99DD2007990ED /* Notifier Extension */ = {
+			isa = PBXGroup;
+			children = (
+				00EC0B6C1CB99E38007990ED /* classes */,
+				00EC0B5E1CB99DD3007990ED /* Assets.xcassets */,
+				00EC0B601CB99DD3007990ED /* Info.plist */,
+				00EC0B4D1CB99DD2007990ED /* Supporting Files */,
+			);
+			path = "Notifier Extension";
+			sourceTree = "<group>";
+		};
+		00EC0B4D1CB99DD2007990ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00EC0B4E1CB99DD2007990ED /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		00EC0B6C1CB99E38007990ED /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				00EC0B6D1CB99E38007990ED /* complication */,
+				00EC0B701CB99E38007990ED /* ExtensionDelegate.h */,
+				00EC0B711CB99E38007990ED /* ExtensionDelegate.m */,
+				00EC0B721CB99E38007990ED /* glance */,
+				00EC0B751CB99E38007990ED /* InterfaceController.h */,
+				00EC0B761CB99E38007990ED /* InterfaceController.m */,
+				00EC0B771CB99E38007990ED /* notification */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		00EC0B6D1CB99E38007990ED /* complication */ = {
+			isa = PBXGroup;
+			children = (
+				0090A36D1CB9F04C00D1F68C /* support */,
+				00EC0B6E1CB99E38007990ED /* DFCComplicationController.h */,
+				00EC0B6F1CB99E38007990ED /* DFCComplicationController.m */,
+				0079B9261CBC369B00F925C5 /* DFCComplicationData.h */,
+				0079B9271CBC369B00F925C5 /* DFCComplicationData.m */,
+			);
+			path = complication;
+			sourceTree = "<group>";
+		};
+		00EC0B721CB99E38007990ED /* glance */ = {
+			isa = PBXGroup;
+			children = (
+				00EC0B731CB99E38007990ED /* GlanceController.h */,
+				00EC0B741CB99E38007990ED /* GlanceController.m */,
+			);
+			path = glance;
+			sourceTree = "<group>";
+		};
+		00EC0B771CB99E38007990ED /* notification */ = {
+			isa = PBXGroup;
+			children = (
+				00EC0B781CB99E38007990ED /* NotificationController.h */,
+				00EC0B791CB99E38007990ED /* NotificationController.m */,
+			);
+			path = notification;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00EC0B0A1CB99CAC007990ED /* Schedule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00EC0B221CB99CAC007990ED /* Build configuration list for PBXNativeTarget "Schedule" */;
+			buildPhases = (
+				00EC0B071CB99CAC007990ED /* Sources */,
+				00EC0B081CB99CAC007990ED /* Frameworks */,
+				00EC0B091CB99CAC007990ED /* Resources */,
+				00EC0B6B1CB99DD3007990ED /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00EC0B621CB99DD3007990ED /* PBXTargetDependency */,
+			);
+			name = Schedule;
+			productName = Schedule;
+			productReference = 00EC0B0B1CB99CAC007990ED /* Schedule.app */;
+			productType = "com.apple.product-type.application";
+		};
+		00EC0B3B1CB99DD2007990ED /* Notifier */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00EC0B681CB99DD3007990ED /* Build configuration list for PBXNativeTarget "Notifier" */;
+			buildPhases = (
+				00EC0B3A1CB99DD2007990ED /* Resources */,
+				00EC0B671CB99DD3007990ED /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00EC0B4B1CB99DD2007990ED /* PBXTargetDependency */,
+			);
+			name = Notifier;
+			productName = Notifier;
+			productReference = 00EC0B3C1CB99DD2007990ED /* Notifier.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		00EC0B471CB99DD2007990ED /* Notifier Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00EC0B641CB99DD3007990ED /* Build configuration list for PBXNativeTarget "Notifier Extension" */;
+			buildPhases = (
+				00EC0B441CB99DD2007990ED /* Sources */,
+				00EC0B451CB99DD2007990ED /* Frameworks */,
+				00EC0B461CB99DD2007990ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Notifier Extension";
+			productName = "Notifier Extension";
+			productReference = 00EC0B481CB99DD2007990ED /* Notifier Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00EC0B031CB99CAC007990ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Dmiry Feld";
+				TargetAttributes = {
+					00EC0B0A1CB99CAC007990ED = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 3U634G43L4;
+					};
+					00EC0B3B1CB99DD2007990ED = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 3U634G43L4;
+					};
+					00EC0B471CB99DD2007990ED = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 3U634G43L4;
+					};
+				};
+			};
+			buildConfigurationList = 00EC0B061CB99CAC007990ED /* Build configuration list for PBXProject "Schedule" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				fr,
+			);
+			mainGroup = 00EC0B021CB99CAC007990ED;
+			productRefGroup = 00EC0B0C1CB99CAC007990ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00EC0B0A1CB99CAC007990ED /* Schedule */,
+				00EC0B3B1CB99DD2007990ED /* Notifier */,
+				00EC0B471CB99DD2007990ED /* Notifier Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00EC0B091CB99CAC007990ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00EC0B391CB99D68007990ED /* Localizable.strings in Resources */,
+				00EC0B1E1CB99CAC007990ED /* LaunchScreen.storyboard in Resources */,
+				00EC0B381CB99D68007990ED /* InfoPlist.strings in Resources */,
+				00EC0B1B1CB99CAC007990ED /* Assets.xcassets in Resources */,
+				00EC0B191CB99CAC007990ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EC0B3A1CB99DD2007990ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00EC0B421CB99DD2007990ED /* Assets.xcassets in Resources */,
+				00EC0B401CB99DD2007990ED /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EC0B461CB99DD2007990ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00EC0B5F1CB99DD3007990ED /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00EC0B071CB99CAC007990ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00EC0B9A1CB9A518007990ED /* DFCSchedule.m in Sources */,
+				00EC0B811CB99E60007990ED /* DFCUIUtils.m in Sources */,
+				00DA1D6B1CB9D473003053A3 /* DFCMeetingViewCell.m in Sources */,
+				00EC0B361CB99D68007990ED /* DFCAppDelegate.m in Sources */,
+				00DA1D6A1CB9D473003053A3 /* DFCMeetingsViewController.m in Sources */,
+				00DA1D611CB9CF87003053A3 /* DFCTheme.m in Sources */,
+				00EC0B851CB99F0C007990ED /* DFCMeeting.m in Sources */,
+				00DA1D651CB9D18C003053A3 /* DFCApplicationData.m in Sources */,
+				00EC0B101CB99CAC007990ED /* main.m in Sources */,
+				00EC0B8D1CB99FEC007990ED /* DFCLogger.m in Sources */,
+				00EC0B921CB9A037007990ED /* DFCSingleton.m in Sources */,
+				00EC0B891CB99F28007990ED /* DFCModel.m in Sources */,
+				00EC0B961CB9A098007990ED /* NSDate+Notifier.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00EC0B441CB99DD2007990ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00EC0B7E1CB99E38007990ED /* NotificationController.m in Sources */,
+				00EC0B7C1CB99E38007990ED /* GlanceController.m in Sources */,
+				00EC0B7D1CB99E38007990ED /* InterfaceController.m in Sources */,
+				0090A3701CB9F04C00D1F68C /* DFCModulalLargeComplicationSupport.m in Sources */,
+				00EC0B8A1CB99F28007990ED /* DFCModel.m in Sources */,
+				00EC0B931CB9A037007990ED /* DFCSingleton.m in Sources */,
+				00EC0B971CB9A098007990ED /* NSDate+Notifier.m in Sources */,
+				00EC0B8E1CB99FEC007990ED /* DFCLogger.m in Sources */,
+				0079B9281CBC369B00F925C5 /* DFCComplicationData.m in Sources */,
+				00EC0B861CB99F0C007990ED /* DFCMeeting.m in Sources */,
+				0079B92E1CBC3C5300F925C5 /* DFCComplicationSupport.m in Sources */,
+				00EC0B7B1CB99E38007990ED /* ExtensionDelegate.m in Sources */,
+				00DA1D621CB9CF87003053A3 /* DFCTheme.m in Sources */,
+				00EC0B821CB99E60007990ED /* DFCUIUtils.m in Sources */,
+				00EC0B9B1CB9A518007990ED /* DFCSchedule.m in Sources */,
+				00EC0B7A1CB99E38007990ED /* DFCComplicationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00EC0B4B1CB99DD2007990ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00EC0B471CB99DD2007990ED /* Notifier Extension */;
+			targetProxy = 00EC0B4A1CB99DD2007990ED /* PBXContainerItemProxy */;
+		};
+		00EC0B621CB99DD3007990ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00EC0B3B1CB99DD2007990ED /* Notifier */;
+			targetProxy = 00EC0B611CB99DD3007990ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		00EC0B171CB99CAC007990ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00EC0B181CB99CAC007990ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		00EC0B1C1CB99CAC007990ED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00EC0B1D1CB99CAC007990ED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		00EC0B301CB99D68007990ED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00EC0B311CB99D68007990ED /* en */,
+				00EC0B341CB99D68007990ED /* fr */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		00EC0B321CB99D68007990ED /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00EC0B331CB99D68007990ED /* en */,
+				00EC0B351CB99D68007990ED /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00EC0B3E1CB99DD2007990ED /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00EC0B3F1CB99DD2007990ED /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00EC0B201CB99CAC007990ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00EC0B211CB99CAC007990ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00EC0B231CB99CAC007990ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Schedule/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.df.Schedule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		00EC0B241CB99CAC007990ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Schedule/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.df.Schedule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		00EC0B651CB99DD3007990ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Notifier Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.df.Schedule.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		00EC0B661CB99DD3007990ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Notifier Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.df.Schedule.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		00EC0B691CB99DD3007990ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IBSC_MODULE = Notifier_Extension;
+				INFOPLIST_FILE = Notifier/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.df.Schedule.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		00EC0B6A1CB99DD3007990ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IBSC_MODULE = Notifier_Extension;
+				INFOPLIST_FILE = Notifier/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.df.Schedule.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00EC0B061CB99CAC007990ED /* Build configuration list for PBXProject "Schedule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00EC0B201CB99CAC007990ED /* Debug */,
+				00EC0B211CB99CAC007990ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00EC0B221CB99CAC007990ED /* Build configuration list for PBXNativeTarget "Schedule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00EC0B231CB99CAC007990ED /* Debug */,
+				00EC0B241CB99CAC007990ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00EC0B641CB99DD3007990ED /* Build configuration list for PBXNativeTarget "Notifier Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00EC0B651CB99DD3007990ED /* Debug */,
+				00EC0B661CB99DD3007990ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00EC0B681CB99DD3007990ED /* Build configuration list for PBXNativeTarget "Notifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00EC0B691CB99DD3007990ED /* Debug */,
+				00EC0B6A1CB99DD3007990ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00EC0B031CB99CAC007990ED /* Project object */;
+}
