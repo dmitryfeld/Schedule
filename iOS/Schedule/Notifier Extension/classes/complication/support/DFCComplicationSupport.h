@@ -19,4 +19,5 @@ typedef enum __DFCComplicationSupportMeetingStates__:NSUInteger {
 @interface DFCComplicationSupport : NSObject
 @property (readonly,nonatomic) CLKComplicationTemplate* defaultTemplate;
 - (CLKComplicationTimelineEntry*) timelineEntryForMeeting:(DFCMeeting*)meeting withDate:(NSDate*)date andState:(DFCComplicationSupportMeetingStates)state;
+- (UIColor*) tintColorForState:(DFCComplicationSupportMeetingStates)state;
 @end

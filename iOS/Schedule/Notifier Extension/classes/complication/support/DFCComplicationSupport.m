@@ -7,6 +7,7 @@
 //
 
 #import "DFCComplicationSupport.h"
+#import "DFCTheme.h"
 
 @implementation DFCComplicationSupport
 @dynamic defaultTemplate;
@@ -15,5 +16,20 @@
 }
 - (CLKComplicationTemplate*) defaultTemplate {
     return nil;
+}
+- (UIColor*) tintColorForState:(DFCComplicationSupportMeetingStates)state {
+    UIColor* result = [DFCTheme sharedTheme].nextMeetingTintColor;
+    switch (state) {
+        case kDFCComplicationSupportMeetingStateStarted:
+            result = [DFCTheme sharedTheme].startedMeetingTintColor;
+            break;
+        case kDFCComplicationSupportMeetingStateCompleted:
+            result = [DFCTheme sharedTheme].completedMeetingTintColor;
+            break;
+        case kDFCComplicationSupportMeetingStateNext:
+        default:
+            break;
+    }
+    return result;
 }
 @end

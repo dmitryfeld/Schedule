@@ -8,13 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-typedef enum __DFCLogLevels {
-    kDFCLogLevelNone = 0x0000,
-    kDFCLogLevelError = 0x0001,
-    kDFCLogLevelWarning = 0x0002,
-    kDFCLogLevelMessage = 0x0003,
-} DFCLogLevels;
-
 typedef enum __DFCLoggerLevels:NSUInteger {
     kDFCLoggerLevelNone = 0x0000,
     kDFCLoggerLevelError = 0x0001,

@@ -7,6 +7,7 @@
 //
 
 #import "DFCAppDelegate.h"
+#import "DFCLogger.h"
 
 @interface DFCAppDelegate () {
     
@@ -17,6 +18,7 @@
 @implementation DFCAppDelegate
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [DFCLogger sharedLogger].levels = kDFCLoggerLevelMessage;
     return YES;
 }
 

@@ -15,6 +15,7 @@
 + (NSNumber*) RESTNumberFromDate:(NSDate*)date;
 + (NSString*) shortDateFormatForDate:(NSDate*)date;
 + (NSString*) shortTimeFormatForDate:(NSDate*)date;
++ (NSString*) shortFormatForDate:(NSDate*)date;
 + (BOOL) isPast:(NSDate*)date;
 + (BOOL) isFuture:(NSDate*)date;
 @end

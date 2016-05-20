@@ -53,6 +53,12 @@ const NSString* __DFCApplicationDataTag = @"__DFCApplicationDataTag";
     NSDictionary* content = [_schedule dictionary];
     
     if (self.watchSession.isPaired) {
+        
+        WCSessionUserInfoTransfer* transfer = [self.watchSession transferUserInfo:content];
+        __WARNING__(@"Transferring: %@",transfer.transferring?@"YES":@"NO");
+        //[self.watchSession updateApplicationContext:content error:nil];
+        
+        /*
         if (self.watchSession.isReachable) {
             [self.watchSession sendMessage:content replyHandler:^(NSDictionary<NSString *,id> * _Nonnull replyMessage) {
                 
@@ -60,9 +66,10 @@ const NSString* __DFCApplicationDataTag = @"__DFCApplicationDataTag";
             
             }];
         } else {
-            WCSessionUserInfoTransfer* transfer = [self.watchSession transferCurrentComplicationUserInfo:content];
-            __WARNING__(@"Transferring: %@",transfer.transferring?@"YES":@"NO");
+            transfer = [self.watchSession transferCurrentComplicationUserInfo:content];
+            __WARNING__(@"Transferring to complication: %@",transfer.transferring?@"YES":@"NO");
         }
+        */
     }
     
 }

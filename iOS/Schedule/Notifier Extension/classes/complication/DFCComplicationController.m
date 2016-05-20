@@ -13,6 +13,7 @@
 #import "DFCComplicationData.h"
 
 #import "DFCModulalLargeComplicationSupport.h"
+#import "DFCUtilitarianLargeComplicationSupport.h"
 
 
 
@@ -20,17 +21,19 @@
 @private
     WCSession* _watchSession;
     DFCModulalLargeComplicationSupport* _modularLargeSupport;
+    DFCUtilitarianLargeComplicationSupport* _utilitarianLargeSupport;
 }
 @property (readonly,nonatomic) DFCComplicationData* complicationData;
 @property (readonly,nonatomic) WCSession* watchSession;
 @property (readonly,nonatomic) DFCModulalLargeComplicationSupport* modularLargeSupport;
+@property (readonly,nonatomic) DFCUtilitarianLargeComplicationSupport* utilitarianLargeSupport;
 @end
 
 @implementation DFCComplicationController
 @dynamic complicationData;
 @synthesize watchSession = _watchSession;
 @synthesize modularLargeSupport = _modularLargeSupport;
-
+@synthesize utilitarianLargeSupport = _utilitarianLargeSupport;
 - (id) init {
     if (self = [super init]) {
         self.watchSession.delegate = self;
@@ -47,7 +50,7 @@
 
 - (void)getTimelineStartDateForComplication:(CLKComplication *)complication withHandler:(void(^)(NSDate * __nullable date))handler {
     NSDate* date = nil;
-    if (self.complicationData.schedule.hasMeetings) {
+    if (self.complicationData.schedule.hasMeetings && [self isComplicationSupported:complication]) {
         date = [self.complicationData.schedule firstMeeting].startDate;
     }
     handler(date);
@@ -55,7 +58,7 @@
 
 - (void)getTimelineEndDateForComplication:(CLKComplication *)complication withHandler:(void(^)(NSDate * __nullable date))handler {
     NSDate* date = nil;
-    if (self.complicationData.schedule.hasMeetings) {
+    if (self.complicationData.schedule.hasMeetings && [self isComplicationSupported:complication]) {
         date = [self.complicationData.schedule lastMeeting].endDate;
     }
     handler(date);
@@ -69,7 +72,7 @@
 
 - (void) getCurrentTimelineEntryForComplication:(CLKComplication *)complication withHandler:(void(^)(CLKComplicationTimelineEntry * __nullable))handler {
     CLKComplicationTimelineEntry* entry = nil;
-    if (complication.family == CLKComplicationFamilyModularLarge) {
+    if ([self isComplicationSupported:complication]) {
         NSDate* date = [NSDate date];
         DFCMeeting* current = [self meetingForDate:date];
         DFCComplicationSupportMeetingStates state = kDFCComplicationSupportMeetingStateNext;
@@ -84,7 +87,12 @@
         } else if ([DFCMeetingAUX hasMeeting:current startedToDate:date]) {
             state = kDFCComplicationSupportMeetingStateStarted;
         }
-        entry = [self.modularLargeSupport timelineEntryForMeeting:current withDate:date andState:state];
+        if (complication.family == CLKComplicationFamilyModularLarge) {
+            entry = [self.modularLargeSupport timelineEntryForMeeting:current withDate:date andState:state];
+        }
+        if (complication.family == CLKComplicationFamilyUtilitarianLarge) {
+            entry = [self.utilitarianLargeSupport timelineEntryForMeeting:current withDate:date andState:state];
+        }
     }
     handler(entry);
 }
@@ -93,7 +101,7 @@
     // Call the handler with the timeline entries prior to the given date
     NSMutableArray<CLKComplicationTimelineEntry*>* entries = nil;
     
-    if (self.complicationData.schedule.hasMeetings) {
+    if (self.complicationData.schedule.hasMeetings && [self isComplicationSupported:complication]) {
         CLKComplicationTimelineEntry* entry = nil;
         entries = [NSMutableArray<CLKComplicationTimelineEntry*> new];
         DFCMeeting* temp = nil;
@@ -109,7 +117,12 @@
                     state = kDFCComplicationSupportMeetingStateStarted;
                 }
                 
-                entry = [self.modularLargeSupport timelineEntryForMeeting:temp withDate:current andState:state];
+                if (complication.family == CLKComplicationFamilyModularLarge) {
+                    entry = [self.modularLargeSupport timelineEntryForMeeting:temp withDate:current andState:state];
+                }
+                if (complication.family == CLKComplicationFamilyUtilitarianLarge) {
+                    entry = [self.utilitarianLargeSupport timelineEntryForMeeting:temp withDate:current andState:state];
+                }
                 [entries addObject:entry];
             }
         }
@@ -122,7 +135,7 @@
     // Call the handler with the timeline entries after to the given date
     NSMutableArray<CLKComplicationTimelineEntry*>* entries = nil;
     
-    if (self.complicationData.schedule.hasMeetings) {
+    if (self.complicationData.schedule.hasMeetings && [self isComplicationSupported:complication]) {
         CLKComplicationTimelineEntry* entry = nil;
         entries = [NSMutableArray<CLKComplicationTimelineEntry*> new];
         DFCMeeting* temp = nil;
@@ -138,7 +151,12 @@
                     state = kDFCComplicationSupportMeetingStateStarted;
                 }
                 
-                entry = [self.modularLargeSupport timelineEntryForMeeting:temp withDate:current andState:state];
+                if (complication.family == CLKComplicationFamilyModularLarge) {
+                    entry = [self.modularLargeSupport timelineEntryForMeeting:temp withDate:current andState:state];
+                }
+                if (complication.family == CLKComplicationFamilyUtilitarianLarge) {
+                    entry = [self.utilitarianLargeSupport timelineEntryForMeeting:temp withDate:current andState:state];
+                }
                 [entries addObject:entry];
             }
         }
@@ -157,11 +175,16 @@
 }
 
 #pragma mark - Placeholder Templates
-- (void)getPlaceholderTemplateForComplication:(CLKComplication *)complication withHandler:(void(^)(CLKComplicationTemplate * __nullable complicationTemplate))handler {
-    CLKComplicationTemplateModularLargeStandardBody* template = nil;
+- (void) getPlaceholderTemplateForComplication:(CLKComplication *)complication withHandler:(void(^)(CLKComplicationTemplate * __nullable complicationTemplate))handler {
+    CLKComplicationTemplate* template = nil;
     
-    if (complication.family == CLKComplicationFamilyModularLarge) {
-        template = self.modularLargeSupport.defaultTemplate;
+    if ([self isComplicationSupported:complication]) {
+        if (complication.family == CLKComplicationFamilyModularLarge) {
+            template = self.modularLargeSupport.defaultTemplate;
+        }
+        if (complication.family == CLKComplicationFamilyUtilitarianLarge) {
+            template = self.utilitarianLargeSupport.defaultTemplate;
+        }
     }
     
     handler(template);
@@ -197,7 +220,17 @@
     components.minute -= 10;
     return [calendar dateFromComponents:components];
 }
-
+#pragma mark Internal APIs
+- (BOOL) isComplicationSupported:(CLKComplication*)complication {
+    BOOL result = NO;
+    if (complication.family == CLKComplicationFamilyModularLarge) {
+        result = YES;
+    }
+    if (complication.family == CLKComplicationFamilyUtilitarianLarge) {
+        result = YES;
+    }
+    return result;
+}
 #pragma mark Internal Properties
 - (WCSession*) watchSession {
     if (!_watchSession) {
@@ -214,6 +247,12 @@
         _modularLargeSupport = [DFCModulalLargeComplicationSupport new];
     }
     return _modularLargeSupport;
+}
+- (DFCUtilitarianLargeComplicationSupport*) utilitarianLargeSupport {
+    if (!_utilitarianLargeSupport) {
+        _utilitarianLargeSupport = [DFCUtilitarianLargeComplicationSupport new];
+    }
+    return _utilitarianLargeSupport;
 }
 - (DFCComplicationData*) complicationData {
     return [DFCComplicationData sharedComplicationData];

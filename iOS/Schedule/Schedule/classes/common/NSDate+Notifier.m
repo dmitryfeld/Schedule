@@ -42,6 +42,9 @@
     formatter.timeStyle = NSDateFormatterShortStyle;
     return [formatter stringFromDate:date];
 }
++ (NSString*) shortFormatForDate:(NSDate*)date {
+    return [NSString stringWithFormat:@"%@ - %@",[NSDate shortDateFormatForDate:date],[NSDate shortTimeFormatForDate:date]];
+}
 + (BOOL) isPast:(NSDate*)date {
     NSTimeInterval interval = [date timeIntervalSinceNow];
     return (interval < 0);

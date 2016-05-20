@@ -1,21 +1,69 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider=""/>
+                <controller id="AgC-eL-Hgc" customClass="DFCInterfaceController">
+                    <items>
+                        <table alignment="left" id="7hD-86-5dA">
+                            <items>
+                                <tableRow identifier="scheduleRowType" id="EUn-uw-a1O" customClass="DFCScheduleRowType">
+                                    <group key="rootItem" width="1" alignment="left" id="gaP-yL-xVc">
+                                        <items>
+                                            <imageView width="29" height="32" alignment="left" verticalAlignment="center" contentMode="center" id="itN-Av-6JL"/>
+                                            <label width="89.5" height="33.5" alignment="left" verticalAlignment="center" text="Label" id="m4W-Wq-5bN"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="icon" destination="itN-Av-6JL" id="8ZX-Up-ykF"/>
+                                        <outlet property="name" destination="m4W-Wq-5bN" id="Huf-BT-uSo"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="7hD-86-5dA" id="u4S-MZ-imV"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="235" y="347"/>
+        </scene>
+        <!--kDFCMeetingDetailsInterfaceControllerID-->
+        <scene sceneID="g0R-It-Bgh">
+            <objects>
+                <controller identifier="kDFCMeetingDetailsInterfaceControllerID" id="6gZ-oK-hd5" customClass="DFCMeetingDetailsInterfaceController">
+                    <items>
+                        <group width="1" height="40" alignment="left" id="bLA-1d-22E">
+                            <items>
+                                <imageView width="37" alignment="left" verticalAlignment="center" contentMode="center" id="j5D-IS-9Rr"/>
+                                <label width="91.5" height="35.5" alignment="left" verticalAlignment="center" text="Label" id="Di7-cu-O8h"/>
+                            </items>
+                        </group>
+                        <label width="133.5" height="42.5" alignment="left" text="Label" textAlignment="left" numberOfLines="2" id="LCF-os-Ro0"/>
+                        <label width="133.5" alignment="left" text="Label" id="Xsj-Qw-f9e"/>
+                        <label width="134.5" alignment="left" text="Label" id="ziU-6T-WVP"/>
+                    </items>
+                    <connections>
+                        <outlet property="completed" destination="ziU-6T-WVP" id="n8v-O1-PkQ"/>
+                        <outlet property="displayName" destination="LCF-os-Ro0" id="SAj-qN-Bxf"/>
+                        <outlet property="icon" destination="j5D-IS-9Rr" id="XCx-O4-RtZ"/>
+                        <outlet property="name" destination="Di7-cu-O8h" id="CTM-3a-ttt"/>
+                        <outlet property="started" destination="Xsj-Qw-f9e" id="hDw-Dq-cKg"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="526" y="347"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
             <objects>
-                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModuleProvider="">
+                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController">
                     <items>
                         <group alignment="left" id="t8f-Gd-c4y"/>
                         <group alignment="left" id="uCw-4Q-Ouw"/>
@@ -44,7 +92,7 @@
         <!--Notification Controller-->
         <scene sceneID="KIl-fV-djm">
             <objects>
-                <controller id="gdX-wl-uQE" customClass="NotificationController" customModuleProvider=""/>
+                <controller id="gdX-wl-uQE" customClass="NotificationController"/>
             </objects>
             <point key="canvasLocation" x="553" y="1001"/>
         </scene>

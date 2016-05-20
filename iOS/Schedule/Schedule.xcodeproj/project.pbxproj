@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		000011001CC5A1DF00376CA1 /* DFCUtilitarianLargeComplicationSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 000010FF1CC5A1DF00376CA1 /* DFCUtilitarianLargeComplicationSupport.m */; };
+		004E3A971CDC901000B9DA59 /* DFCInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 004E3A961CDC901000B9DA59 /* DFCInterfaceController.m */; };
+		004E3A9A1CDC987B00B9DA59 /* DFCScheduleRowType.m in Sources */ = {isa = PBXBuildFile; fileRef = 004E3A991CDC987B00B9DA59 /* DFCScheduleRowType.m */; };
+		004E3A9D1CDCA40500B9DA59 /* meeting_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 004E3A9B1CDCA40500B9DA59 /* meeting_small.png */; };
+		004E3A9E1CDCA40500B9DA59 /* meeting_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 004E3A9B1CDCA40500B9DA59 /* meeting_small.png */; };
+		004E3A9F1CDCA40500B9DA59 /* meeting_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 004E3A9B1CDCA40500B9DA59 /* meeting_small.png */; };
+		004E3AA01CDCA40500B9DA59 /* meeting_small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 004E3A9C1CDCA40500B9DA59 /* meeting_small@2x.png */; };
+		004E3AA11CDCA40500B9DA59 /* meeting_small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 004E3A9C1CDCA40500B9DA59 /* meeting_small@2x.png */; };
+		004E3AA21CDCA40500B9DA59 /* meeting_small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 004E3A9C1CDCA40500B9DA59 /* meeting_small@2x.png */; };
+		004E3AAA1CDCA71800B9DA59 /* DFCMeetingDetailsInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 004E3AA91CDCA71800B9DA59 /* DFCMeetingDetailsInterfaceController.m */; };
 		006F096C1CC0B85D00A8E5C7 /* meeting.png in Resources */ = {isa = PBXBuildFile; fileRef = 006F096A1CC0B85D00A8E5C7 /* meeting.png */; };
 		006F096D1CC0B85D00A8E5C7 /* meeting.png in Resources */ = {isa = PBXBuildFile; fileRef = 006F096A1CC0B85D00A8E5C7 /* meeting.png */; };
 		006F096E1CC0B85D00A8E5C7 /* meeting.png in Resources */ = {isa = PBXBuildFile; fileRef = 006F096A1CC0B85D00A8E5C7 /* meeting.png */; };
@@ -36,7 +46,6 @@
 		00EC0B7A1CB99E38007990ED /* DFCComplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EC0B6F1CB99E38007990ED /* DFCComplicationController.m */; };
 		00EC0B7B1CB99E38007990ED /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EC0B711CB99E38007990ED /* ExtensionDelegate.m */; };
 		00EC0B7C1CB99E38007990ED /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EC0B741CB99E38007990ED /* GlanceController.m */; };
-		00EC0B7D1CB99E38007990ED /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EC0B761CB99E38007990ED /* InterfaceController.m */; };
 		00EC0B7E1CB99E38007990ED /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EC0B791CB99E38007990ED /* NotificationController.m */; };
 		00EC0B811CB99E60007990ED /* DFCUIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EC0B801CB99E60007990ED /* DFCUIUtils.m */; };
 		00EC0B821CB99E60007990ED /* DFCUIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EC0B801CB99E60007990ED /* DFCUIUtils.m */; };
@@ -97,6 +106,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		000010FE1CC5A1DF00376CA1 /* DFCUtilitarianLargeComplicationSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFCUtilitarianLargeComplicationSupport.h; sourceTree = "<group>"; };
+		000010FF1CC5A1DF00376CA1 /* DFCUtilitarianLargeComplicationSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFCUtilitarianLargeComplicationSupport.m; sourceTree = "<group>"; };
+		004E3A951CDC901000B9DA59 /* DFCInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFCInterfaceController.h; sourceTree = "<group>"; };
+		004E3A961CDC901000B9DA59 /* DFCInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFCInterfaceController.m; sourceTree = "<group>"; };
+		004E3A981CDC987B00B9DA59 /* DFCScheduleRowType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFCScheduleRowType.h; sourceTree = "<group>"; };
+		004E3A991CDC987B00B9DA59 /* DFCScheduleRowType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFCScheduleRowType.m; sourceTree = "<group>"; };
+		004E3A9B1CDCA40500B9DA59 /* meeting_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meeting_small.png; sourceTree = "<group>"; };
+		004E3A9C1CDCA40500B9DA59 /* meeting_small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "meeting_small@2x.png"; sourceTree = "<group>"; };
+		004E3AA81CDCA71800B9DA59 /* DFCMeetingDetailsInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFCMeetingDetailsInterfaceController.h; sourceTree = "<group>"; };
+		004E3AA91CDCA71800B9DA59 /* DFCMeetingDetailsInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFCMeetingDetailsInterfaceController.m; sourceTree = "<group>"; };
 		006F096A1CC0B85D00A8E5C7 /* meeting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meeting.png; sourceTree = "<group>"; };
 		006F096B1CC0B85D00A8E5C7 /* meeting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "meeting@2x.png"; sourceTree = "<group>"; };
 		0079B9261CBC369B00F925C5 /* DFCComplicationData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFCComplicationData.h; sourceTree = "<group>"; };
@@ -139,8 +158,6 @@
 		00EC0B711CB99E38007990ED /* ExtensionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
 		00EC0B731CB99E38007990ED /* GlanceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlanceController.h; sourceTree = "<group>"; };
 		00EC0B741CB99E38007990ED /* GlanceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlanceController.m; sourceTree = "<group>"; };
-		00EC0B751CB99E38007990ED /* InterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
-		00EC0B761CB99E38007990ED /* InterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
 		00EC0B781CB99E38007990ED /* NotificationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
 		00EC0B791CB99E38007990ED /* NotificationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
 		00EC0B7F1CB99E60007990ED /* DFCUIUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = DFCUIUtils.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -178,9 +195,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		004E3A941CDC901000B9DA59 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				004E3AA71CDCA71800B9DA59 /* details */,
+				004E3A951CDC901000B9DA59 /* DFCInterfaceController.h */,
+				004E3A961CDC901000B9DA59 /* DFCInterfaceController.m */,
+				004E3A981CDC987B00B9DA59 /* DFCScheduleRowType.h */,
+				004E3A991CDC987B00B9DA59 /* DFCScheduleRowType.m */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		004E3AA71CDCA71800B9DA59 /* details */ = {
+			isa = PBXGroup;
+			children = (
+				004E3AA81CDCA71800B9DA59 /* DFCMeetingDetailsInterfaceController.h */,
+				004E3AA91CDCA71800B9DA59 /* DFCMeetingDetailsInterfaceController.m */,
+			);
+			path = details;
+			sourceTree = "<group>";
+		};
 		006F09691CC0B84D00A8E5C7 /* Artwork */ = {
 			isa = PBXGroup;
 			children = (
+				004E3A9B1CDCA40500B9DA59 /* meeting_small.png */,
+				004E3A9C1CDCA40500B9DA59 /* meeting_small@2x.png */,
 				006F096A1CC0B85D00A8E5C7 /* meeting.png */,
 				006F096B1CC0B85D00A8E5C7 /* meeting@2x.png */,
 			);
@@ -194,6 +234,8 @@
 				0079B92D1CBC3C5300F925C5 /* DFCComplicationSupport.m */,
 				0090A36E1CB9F04C00D1F68C /* DFCModulalLargeComplicationSupport.h */,
 				0090A36F1CB9F04C00D1F68C /* DFCModulalLargeComplicationSupport.m */,
+				000010FE1CC5A1DF00376CA1 /* DFCUtilitarianLargeComplicationSupport.h */,
+				000010FF1CC5A1DF00376CA1 /* DFCUtilitarianLargeComplicationSupport.m */,
 			);
 			path = support;
 			sourceTree = "<group>";
@@ -362,12 +404,11 @@
 		00EC0B6C1CB99E38007990ED /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				004E3A941CDC901000B9DA59 /* Interface */,
 				00EC0B6D1CB99E38007990ED /* complication */,
 				00EC0B701CB99E38007990ED /* ExtensionDelegate.h */,
 				00EC0B711CB99E38007990ED /* ExtensionDelegate.m */,
 				00EC0B721CB99E38007990ED /* glance */,
-				00EC0B751CB99E38007990ED /* InterfaceController.h */,
-				00EC0B761CB99E38007990ED /* InterfaceController.m */,
 				00EC0B771CB99E38007990ED /* notification */,
 			);
 			path = classes;
@@ -512,6 +553,8 @@
 				006F096C1CC0B85D00A8E5C7 /* meeting.png in Resources */,
 				00EC0B1E1CB99CAC007990ED /* LaunchScreen.storyboard in Resources */,
 				00EC0B381CB99D68007990ED /* InfoPlist.strings in Resources */,
+				004E3AA01CDCA40500B9DA59 /* meeting_small@2x.png in Resources */,
+				004E3A9D1CDCA40500B9DA59 /* meeting_small.png in Resources */,
 				00EC0B1B1CB99CAC007990ED /* Assets.xcassets in Resources */,
 				00EC0B191CB99CAC007990ED /* Main.storyboard in Resources */,
 				006F096F1CC0B85D00A8E5C7 /* meeting@2x.png in Resources */,
@@ -523,8 +566,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				006F09701CC0B85D00A8E5C7 /* meeting@2x.png in Resources */,
+				004E3AA11CDCA40500B9DA59 /* meeting_small@2x.png in Resources */,
 				00EC0B421CB99DD2007990ED /* Assets.xcassets in Resources */,
 				006F096D1CC0B85D00A8E5C7 /* meeting.png in Resources */,
+				004E3A9E1CDCA40500B9DA59 /* meeting_small.png in Resources */,
 				00EC0B401CB99DD2007990ED /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,8 +578,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				004E3A9F1CDCA40500B9DA59 /* meeting_small.png in Resources */,
 				00EC0B5F1CB99DD3007990ED /* Assets.xcassets in Resources */,
 				006F096E1CC0B85D00A8E5C7 /* meeting.png in Resources */,
+				004E3AA21CDCA40500B9DA59 /* meeting_small@2x.png in Resources */,
 				006F09711CC0B85D00A8E5C7 /* meeting@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -568,19 +615,22 @@
 			files = (
 				00EC0B7E1CB99E38007990ED /* NotificationController.m in Sources */,
 				00EC0B7C1CB99E38007990ED /* GlanceController.m in Sources */,
-				00EC0B7D1CB99E38007990ED /* InterfaceController.m in Sources */,
 				0090A3701CB9F04C00D1F68C /* DFCModulalLargeComplicationSupport.m in Sources */,
+				004E3A9A1CDC987B00B9DA59 /* DFCScheduleRowType.m in Sources */,
 				00EC0B8A1CB99F28007990ED /* DFCModel.m in Sources */,
 				00EC0B931CB9A037007990ED /* DFCSingleton.m in Sources */,
 				00EC0B971CB9A098007990ED /* NSDate+Notifier.m in Sources */,
 				00EC0B8E1CB99FEC007990ED /* DFCLogger.m in Sources */,
 				0079B9281CBC369B00F925C5 /* DFCComplicationData.m in Sources */,
 				00EC0B861CB99F0C007990ED /* DFCMeeting.m in Sources */,
+				004E3AAA1CDCA71800B9DA59 /* DFCMeetingDetailsInterfaceController.m in Sources */,
 				0079B92E1CBC3C5300F925C5 /* DFCComplicationSupport.m in Sources */,
 				00EC0B7B1CB99E38007990ED /* ExtensionDelegate.m in Sources */,
 				00DA1D621CB9CF87003053A3 /* DFCTheme.m in Sources */,
+				000011001CC5A1DF00376CA1 /* DFCUtilitarianLargeComplicationSupport.m in Sources */,
 				00EC0B821CB99E60007990ED /* DFCUIUtils.m in Sources */,
 				00EC0B9B1CB9A518007990ED /* DFCSchedule.m in Sources */,
+				004E3A971CDC901000B9DA59 /* DFCInterfaceController.m in Sources */,
 				00EC0B7A1CB99E38007990ED /* DFCComplicationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
